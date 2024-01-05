@@ -1,16 +1,16 @@
 .header {
-  margin: 92px 24px 96px;
-  background-color: #fff;
   display: grid;
   grid-template-columns: 452px 148px 452px;
   grid-template-rows: 105px;
   grid-template-areas: "header-menu header-logo header-address";
+  margin: 92px 24px 96px;
+  background-color: #fff;
 }
 
 .header__menu {
   grid-area: header-menu;
-  margin-left: 26.52px;
   margin-top: 44px;
+  margin-left: 26.52px;
 }
 
 .header__links-list {
@@ -22,9 +22,9 @@
 
 .header__links-list-item {
   color: #000;
+  font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
   letter-spacing: 0.18px;
 }
 
@@ -43,9 +43,9 @@
 
 .header__logo {
   grid-area: header-logo;
-  height: 105px;
-  width: 148px;
   justify-self: center;
+  width: 148px;
+  height: 105px;
 }
 
 .header__logo-image {
@@ -54,16 +54,16 @@
 
 .header__address {
   grid-area: header-address;
+  justify-self: end;
   width: 241px;
   height: 98px;
-  font-style: normal;
+  margin-top: 5px;
+  margin-right: 25.48px;
   color: #000;
-  font-size: 18px;
   font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
   line-height: 24.3px;
   letter-spacing: 0.18px;
-  margin-right: 25.48px;
-  margin-top: 5px;
-  justify-self: end;
   text-underline-offset: 4px;
 }
