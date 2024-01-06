@@ -74,14 +74,18 @@
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 124.727%;
+  background-size: cover;
   z-index: -1;
+  position: relative;
 }
 
 .overlay {
+  position: absolute;
   height: 100%;
+  width: 100%;
   z-index: 0;
-  background-color: rgba(0, 0, 0, .6);
+  background-color: #000;
+  opacity: .6;
 }
 
 .cover__title {
@@ -130,6 +134,8 @@
 .cover__description {
  padding-left: 78px;
  padding-top: 136px;
+ position: relative;
+ z-index: 1;
 }
 
 .cover__description-text {
@@ -156,4 +162,105 @@
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
+}
+
+.lots {
+padding-left: 24px;
+padding-right: 24px;
+}
+
+.lots__heading {
+  padding-top: 179px;
+  padding-left: 40px;
+  padding-bottom: 27px;
+  color: #000;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  line-height: 47px;
+}
+
+.lots__card-list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat (3, 334px);
+  grid-template-rows: 563px;
+  grid-template-areas: "lots-film lots-book lots-picture";
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.lots__card-list-item {
+
+}
+
+.card-link {
+  display: block;
+  text-decoration: none;
+  position: relative;
+  height: 100%;
+}
+
+.card {
+  height: 100%;
+  width: 334px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 51px 40px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card_type_film {
+  grid-area: lots-film;
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+  grid-area: lots-book;
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+  grid-area: lots-picture;
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.card__title {
+  color: #FFF;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  position: relative;
+  font-family: Raleway;
+  z-index: 1;
+  text-underline-offset: 3px;
+}
+
+.card__text {
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  position: relative;
+  font-family: Raleway;
+  z-index: 1;
+}
+
+.lots__look-more-link {
+  padding-left: 40px;
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  line-height: 23px;
 }
