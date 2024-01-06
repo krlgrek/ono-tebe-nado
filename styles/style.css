@@ -170,6 +170,7 @@
 .lots {
   padding-right: 24px;
   padding-left: 24px;
+  background-color: #fff;
 }
 
 .lots__heading {
@@ -272,6 +273,7 @@
     ". about-text";
   gap: 8px 25px;
   padding: 183px 24px 180px;
+  background-color: #fff;
 }
 
 .about__logo {
@@ -324,6 +326,7 @@
   padding-right: 50px;
   padding-bottom: 88px;
   padding-left: 50px;
+  background-color: #fff;
 }
 
 .footer_address {
