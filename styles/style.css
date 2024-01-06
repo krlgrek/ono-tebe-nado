@@ -187,7 +187,7 @@
 
 .lots__card-list {
   display: grid;
-  grid-template-columns: repeat (3, 334px);
+  grid-template-columns: repeat(3, 334px);
   grid-template-rows: 563px;
   grid-template-areas: "lots-film lots-book lots-picture";
   gap: 25px;
