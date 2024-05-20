@@ -1,1 +1,1 @@
-https://github.com/Morgven/ono-tebe-nado
+https://github.com/krlgrek/ono-tebe-nado
